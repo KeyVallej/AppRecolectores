@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecolectores.Vista.Login">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#11ffbd" Offset="0.1"/>
+                <GradientStop Color="#02c548" Offset="1.0"/>
+            </LinearGradientBrush> 
+      
+        </Grid.Background>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="https://ibb.co/z58CJ5S"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                
+                <Label Text="Ecocenter"
+                       FontSize="50"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal"
+                          HorizontalOptions="Center">
+                <Image Source="https://ibb.co/fphDQVJ" HeightRequest="22"/>
+                <Entry Placeholder="correo"
+                       HorizontalOptions="Start"
+                       WidthRequest="240"
+                       TextColor="Wheat"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal"
+                          HorizontalOptions="Center">
+                <Image Source="https://ibb.co/4dTkHMp" HeightRequest="22"/>
+                <Entry Placeholder="contraseña"
+                       HorizontalOptions="Start"
+                       WidthRequest="240"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       IsPassword="True"/>
+
+            </StackLayout>
+            <Button Text="Acceder"
+                        FontSize="20"
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        BackgroundColor="Green" 
+                        TextTransform="None"
+                        HorizontalOptions="Center"
+                        Margin="0,15,0,0"/>
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>
